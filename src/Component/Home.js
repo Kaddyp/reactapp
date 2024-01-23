@@ -7,8 +7,12 @@ export default class Home extends Component {
 
     render(){
         return(
-            <div className='container'>
-                <h3 className='mx-auto py-5'>Home Landing Page</h3>
+            <div className='container' style={{paddingTop: '318px', paddingBottom: '318px'}}>
+                <div className="card">
+                    <div className="card-body">
+                        <h3 className='mx-auto py-5'>Home Landing Page</h3>
+                    </div>
+                </div>
             </div>
         )
     }

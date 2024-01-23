@@ -49,7 +49,7 @@ class Register extends Component{
         }
 
         return(
-            <div className='form-signin w-25 mx-auto' style={{paddingTop: '136px', paddingBottom: '136px'}}>
+            <div className='form-signin w-25 mx-auto' style={{paddingTop: '107px', paddingBottom: '107px'}}>
                     <div className="mb-3">
                         <label htmlFor="fname" className="form-label text-start">First Name</label>
                         <input type="text" className="form-control" name="fname" id="fname" placeholder="First Name" onChange={this.onChangeHandler}/>

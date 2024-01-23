@@ -42,7 +42,7 @@ class SignIn extends Component {
       }
         console.log(this.state);
         return(
-            <div className='form-signin w-25 mx-auto' style={{paddingTop: '308px', paddingBottom: '308px'}}>
+            <div className='form-signin w-25 mx-auto' style={{paddingTop: '242px', paddingBottom: '242px'}}>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label text-start">Email</label>
                     <input type="email" className="form-control" name="email" id="email" placeholder="name@example.com" onChange={this.onChangeHandler}/>
