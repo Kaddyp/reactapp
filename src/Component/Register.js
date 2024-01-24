@@ -38,6 +38,8 @@ class Register extends Component{
             this.setState({ redirect: "/signIn" });        
           },
           (error) => {
+            alert(`${error.response.data} && Error Code : ${error.response.status}`);
+            window.location.reload();
             console.log(error);
           }
         );
@@ -60,7 +62,7 @@ class Register extends Component{
                     </div>               
                     <div className="mb-3">
                         <label htmlFor="email" className="form-label text-start">Email</label>
-                        <input type="email" className="form-control" name="email" id="email" placeholder="name@example.com" onChange={this.onChangeHandler}/>
+                        <input type="email" className="form-control" name="email" id="email" placeholder="name@example.com" required onChange={this.onChangeHandler}/>
                     </div>
                     <div className="mb-3">
                         <label htmlFor="custid" className="form-label text-start">Customer Id</label>
@@ -68,11 +70,11 @@ class Register extends Component{
                     </div>
                     <div className="mb-3">
                         <label htmlFor="password" className="form-label text-start">Password</label>
-                        <input type="password" className="form-control" name="password" id="password" placeholder="Password" onChange={this.onChangeHandler}/>
+                        <input type="password" className="form-control" name="password" id="password" required placeholder="Password" onChange={this.onChangeHandler}/>
                     </div>
                     <div className="mb-3">
                         <label htmlFor="confirmPassword" className="form-label text-start">Confirm Password</label>
-                        <input type="password" className="form-control" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" onChange={this.onChangeHandler}/>
+                        <input type="password" className="form-control" name="confirmPassword" id="confirmPassword" required placeholder="Confirm Password" onChange={this.onChangeHandler}/>
                     </div>
                     <button className="btn btn-primary w-100 py-2" type="submit" onClick={this.handleSignUp}>Sign Up</button>
                    

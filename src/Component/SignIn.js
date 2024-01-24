@@ -30,6 +30,8 @@ class SignIn extends Component {
             this.setState({ redirect: "/profile" })
           },
           (error) => {
+            alert(`${error.response.data} && Error Code : ${error.response.status}`);
+            window.location.reload();
             console.log(error);
           }
         );
